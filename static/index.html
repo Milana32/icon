@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InCon</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <nav class="main-menu">
+    <input type ="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fa fa-bars"></i>
+    </label>
+    <label class="logo">InCon</label>
+      <ul class="open" id="top-menu">
+        <li><a class="scrollto" id="link" href="#main-view">Главная</a></li>
+        <li><a class="scrollto" id="link" href="#howwework" >как мы работаем</a></li>
+        <li><a class="scrollto" id="link" href="#benefits">Преимущества</a></li>
+        <li><a class="scrollto" id="link" href="#field">Подписка</a></li>
+        <li><a class="scrollto" id="link" href="#tech">Технологии</a></li>
+        <li><a class="scrollto" id="link" href="#feedback">Связь</a></li>
+      </ul>
+  </nav>
+
+  <section class="anchor page-section hero-section" id="main-view">
+    <div class = "hero-img"> </div>
+    <div class = "hero-content">
+      <h1>
+        Автоматизируйте работу на складе
+      </h1>
+      <p>
+        с помощью функции подсчета по изображению на базе искусственного интеллекта
+      </p>
+      <div class="control">
+        <a href="#feedback" class="btn btn-primary scrollto" id="start-btn">Связаться с нами</a>
+      </div>
+    </div>  
+  </section>
+
+  
+  <section class="anchor page-section stages" id="howwework">
+    <h2 class="ttl">Как мы работаем?</h2>  
+    <p>Работа нашей компании организована в шесть основных 
+      этапов взаимодействия с заказчиком, это позволяет гарантировать качественный результат</p>
+    <div class="stepper d-flex flex-column mt-5 ml-2">
+      <div class="d-flex mb-1">
+        <div class="d-flex flex-column pr-4 align-items-center">
+          <div class="rounded-circle py-2 px-3 bg-primary text-white mb-1">1</div>
+          <div class="line h-100"></div>
+        </div>
+        <div class="work-content">
+          <h5 class="text-dark">Обращение клиента</h5>
+          <p class="lead text-muted pb-3">Заказчик обращается к нам для получения доступа к нашему сервису  </p>
+        </div>
+      </div>
+      <div class="d-flex mb-1">
+        <div class="d-flex flex-column pr-4 align-items-center">
+          <div class="rounded-circle py-2 px-3 bg-primary text-white mb-1">2</div>
+          <div class="line h-100"></div>
+        </div>
+        <div class="work-content">
+          <h5 class="text-dark">Инструктирование по работе</h5>
+          <p class="lead text-muted pb-3">Мы предоставляем заказчикам подробную инструкцию по правильному подключению и работе с нашим сервисом</p>
+        </div>
+      </div>
+      <div class="d-flex mb-1">
+        <div class="d-flex flex-column pr-4 align-items-center">
+          <div class="rounded-circle py-2 px-3 bg-primary text-white mb-1">3</div>
+          <div class="line h-100"></div>
+        </div>
+        <div class="work-content">
+          <h5 class="text-dark">Подключение синхронизации с 1С</h5>
+          <p class="lead text-muted pb-3">Если раньше данные о товарах хранились в базе данных 1С, будет реализована синхронизация нашего сервиса с ней</p>
+        </div>
+      </div>
+      <div class="d-flex mb-1">
+        <div class="d-flex flex-column pr-4 align-items-center">
+          <div class="rounded-circle py-2 px-3 bg-primary text-white mb-1">4</div>
+          <div class="line h-100"></div>
+        </div>
+        <div class="work-content">
+          <h5 class="text-dark">Обсуждение индивидуальных требований</h5>
+          <p class="lead text-muted pb-3">Получаем от заказчика информацию о товаре на его складе</p>
+        </div>
+      </div class="work-content">
+      <div class="d-flex mb-1">
+        <div class="d-flex flex-column pr-4 align-items-center">
+          <div class="rounded-circle py-2 px-3 bg-primary text-white mb-1">5</div>
+          <div class="line h-100"></div>
+        </div>
+        <div class="work-content">
+            <h5 class="text-dark">Настройка ИИ</h5>
+            <p class="lead text-muted pb-3">Обсуждение возможностей нейросети, осуществляющей сканирование товара, под конкретные условия заказчика</p>
+        </div>
+      </div>
+      <div class="d-flex mb-1">
+        <div class="d-flex flex-column pr-4 align-items-center">
+          <div class="rounded-circle py-2 px-3 bg-primary text-white mb-1">6</div>
+          <div class="line h-100 d-none"></div>
+        </div>
+        <div class="work-content">
+          <h5 class="text-dark">Подключение подписки</h5>
+          <p class="lead text-muted pb-3">Предоставление покупателю полного доступа к сервису на выбранный период</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class ="anchor page-section promo" id="benefits">
+    <h2 class="ttl">Наши преимущества</h2>  
+    <div class = "boxes">
+      <div class="box">
+          <h3>Удобное подключение</h3>
+        <p>
+            После оформления подписки, заказчик получает доступ к нашему сервису, куда будут занесены отсканированные с помощью мобильного приложения товары
+        </p>
+      </div>
+
+      <div class="box">
+        <h3>Простота управления</h3>
+        <p>
+            Мобильное приложение InCon  имеет интуитивно понятный интерфейс, поэтому любому пользователю будет легко взаимодействовать с ним. Работа с базой данных будет осуществляться онлайн на нашем сайте
+        </p>
+      </div>
+
+      <div class="box">
+          <h3>Распознавание типа товара </h3>
+          <p>Благодаря нашему мобильному приложению больше не нужно тратить время на ввод тех или иных товаров, нейросеть сама распознает и автоматически добавляет тип товара в базу данных</div>
+
+      <div class="box">
+          <h3>Определение количества товара по фото </h3>
+          <p>Наше мобильное приложение работает на основе нейросети, после считывания типа товара, оно также сможет определить его количество, что значительно ускорит работу на складе </p>
+      </div>
+
+      <div class="box">
+      
+          <h3>Уникальность</h3>
+          <p>Специально обученная нейросеть, которая позволяет определить количество и тип товара, достаточно только навести камеру на то, что хотите распознать и посчитать   </p>
+      </div>
+
+      <div class="box">
+        
+        <h3>Гибкая модель нейросети</h3>
+        <p>
+            База данных нашей нейросети насчитывает окола 100 000 изображений, если этого недостаточно, то модель можно переписать под определенные требования заказчика (обговаривается индивидуально)
+        </p>
+      </div>
+
+      <div class="box">
+       
+        <h3>Синхронизация с базой данных 1С</h3>
+        <p>В России нет сервисов для складского учета, которые могли бы взаимодействовать с базой данных 1С </p>
+      </div>
+
+      <div class="box">
+     
+          <h3>Облачное хранилище данных</h3>
+          <p>Защищенность данных происходит благодаря облачному хранилищу, где находится вся информация о товарах</p>
+      </div>
+    </div>
+  </section>
+
+  <section class ="anchor page-section promo" id="field">
+    <h2 class="ttl">Виды подписок</h2>  
+    <div class = "boxes">
+      <div class="fields">
+        <div class="field-img" id="field-img1"> </div> 
+        <h4>Бесплатный пробный период<p>
+          <ul>
+          <li>● Доступ к сервису на 31 день </li>
+          
+          <li>● Доступ к мобильному приложению </li>
+          
+          <li>● Возможность использования базы данных </li>
+         
+          </ul>
+        </p>
+      </div>
+
+      <div class="fields">
+        <div class="field-img" id="field-img2"> </div> 
+        <h4>Ежемесячная подписка<p>
+    <ul>
+        <li>● Первый месяц бесплатно</li>
+        <li>● Доступ к мобильному приложению</li>
+        <li>● Получение полного доступа к базе данных и облачному хранилищу</li>
+
+    </ul>
+</div>
+
+      <div class="fields">
+        <div class="field-img" id="field-img3"> </div> 
+        <h4>Годовая подписка<p>
+    <ul>
+        <li>● Синхронизация с 1С </li>
+        <li>● Первый месяц бесплатно</li>
+        <li>● Получение полного доступа ко всем возможностям INCON</li>
+
+    </ul>
+</div>
+
+
+  </section>
+
+  <section class ="anchor page-section promo" id="tech">
+    <h2 class="ttl">Используемые нами технологии</h2>  
+    <div class = "boxes-alt" >
+
+      <div class="tech-box" id="one">
+        
+        <h3>Python</h3>
+        <p>Язык программирования, ориентированный под использование машинного обучения</p>
+      </div>
+
+      <div class="tech-box" id="two">
+       
+        <h3>Scikit-learn</h3>
+        <p>Библиотека машинного обучения Python, позволяющая решать большой спектр основных
+          задач машинного обучения</p>
+      </div>
+
+      <div class="tech-box" id="three">
+        
+        <h3>Tensorflow</h3>
+        <p>Библиотека для численных вычислений и крупномасштабного машинного обучения
+        </p>
+      </div>
+
+      <div class="tech-box" id="four">
+        <h3>Нейросеть</h3>
+        <p>
+            Модель facebook/detr-resnet-50   Модель использует так называемые объектные запросы для обнаружения объектов на изображении, каждый объектный запрос ищет определенный объект на изображении
+        </p>
+      </div>
+
+      <div class="tech-box" id="five">
+        
+          <h3>Spring Boot</h3>
+        <p>Популярный фреймворк для создания веб-приложений с использованием Java, Spring Boot упрощает создание автономных приложений производственного уровня, которые можно легко развернуть и запустить с минимальной конфигурацией</p>
+      </div>
+
+      <div class="tech-box" id="six">
+          <h3>React native</h3>
+          <p>
+              Платформа для разработки мобильных приложений с открытым кодом, созданная Facebook, она используется для разработки приложений для Android, iOS, Интернета и UWP
+          </p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="anchor page-section contact-section" id="feedback">
+    <div class="container">
+      <div class="text">Свяжитесь с нами</div>
+      <form action="#" id="order-form">
+         <div class="form-row">
+            <div class="input-data">
+               <input type="text" name="firstName" required>
+               <div class="underline"></div>
+               <label for="">Имя</label>
+            </div>
+            <div class="input-data">
+               <input type="text" name="lastName" required>
+               <div class="underline"></div>
+               <label for="">Фамилия</label>
+            </div>
+         </div>
+         <div class="form-row">
+            <div class="input-data">
+               <input type="text" name="email" required>
+               <div class="underline"></div>
+               <label for="">Эл. адрес</label>
+            </div>
+            <div class="input-data">
+               <input type="text" name="phone" required>
+               <div class="underline"></div>
+               <label for="">Телефон</label>
+            </div>
+         </div>
+         <div class="form-row">
+            <div class="input-data textarea">
+               <textarea name="message" rows="8" cols="80" required></textarea>
+               <br />
+               <div class="underline"></div>
+               <label for="">Сообщение</label>
+               <br />
+              
+         </div>
+      </form>
+      
+   </div>
+   <button class="btn-primary" id="send-btn">Отправить</button> 
+  </section>
+  
+  <script src="script.js"></script>
+
+</body>
+</html>
+
+<!--<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">-->
+    
